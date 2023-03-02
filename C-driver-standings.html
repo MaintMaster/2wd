@@ -4,15 +4,15 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/animation.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/w3.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="icon" href="./assets/maintmaster.png">
 </head>
 
 <body style="background-image: linear-gradient(#00b1b1, #39d7d7); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-<head>
+    <head>
 	<title>
 		MaintMaster 2WD |
-			driver Total
+			driver C
 	</title>
 </head>
 
@@ -43,8 +43,8 @@
 			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
 				<a href="./A-driver-standings.html" class="w3-bar-item w3-button ">A</a>
 				<a href="./B-driver-standings.html" class="w3-bar-item w3-button ">B</a>
-				<a href="./C-driver-standings.html" class="w3-bar-item w3-button ">C</a>
-				<a href="./overall-driver-standings.html" class="w3-bar-item w3-button active">Total</a>
+				<a href="./C-driver-standings.html" class="w3-bar-item w3-button active">C</a>
+				<a href="./overall-driver-standings.html" class="w3-bar-item w3-button ">Total</a>
 			</div>
 		</div>
 
@@ -75,7 +75,7 @@
         </a>
 
         <h3 class="w3-hide-large navTitle bold" style="display:block;">
-            driver - Total
+            driver - C
             <br><span id="countdown"></span>
         </h3>
 
@@ -84,8 +84,8 @@
 	<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large" style="overflow-y:scroll;max-height:95vh;">
             <a href="./A-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - A</a>
             <a href="./B-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - B</a>
-            <a href="./C-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - C</a>
-            <a href="./overall-driver-standings.html" class="w3-bar-item w3-button active">Poängställning - Total</a>
+            <a href="./C-driver-standings.html" class="w3-bar-item w3-button active">Poängställning - C</a>
+            <a href="./overall-driver-standings.html" class="w3-bar-item w3-button ">Poängställning - Total</a>
             <a href="./A-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - A</a>
             <a href="./B-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - B</a>
             <a href="./C-team-standings.html" class="w3-bar-item w3-button ">Teammästerskap - C</a>
@@ -108,7 +108,7 @@
 	</div>
 
 	<div class="w3-bar w3-light-grey secondaryNav">
-			<a href="./overall-0-driver-results.html">
+			<a href="./C-0-driver-results.html">
 				<img src="./assets/country-flags/welsh.png" />
 			</a>
 	</div>
@@ -147,45 +147,46 @@
 	}, 1000);
 </script>
 
-<div id="container">
-    <div id="flexContainer">
-        <div class="flexBox">
-            <div style="margin-bottom: 1em;" class="w3-hide-medium w3-hide-small">
-                <div class="logo" style="display:flex;">
-                    <img src="./assets/maintmaster.png" />
-                    <h2 style="margin-left:1em;">Total Wales Resultat</h2>
+    <div id="container">
+        <div id="flexContainer">
+            <div class="flexBox">
+                <div style="margin-bottom: 1em;" class="w3-hide-medium w3-hide-small">
+                    <div class="logo" style="display:flex;">
+                        <img src="./assets/maintmaster.png" />
+                        <h2 style="margin-left:1em;">C Poängställning</h2>
+                    </div>
                 </div>
-            </div>
 
-            <table id="tableDrivers">
-                <thead>
-                <tr>
-                    <th>Pos</th>
-                    <th>Nat</th>
-                    <th>Förare</th>
-                        <th>Div</th>
-                            <th>Team</th>
-                        <th>Bil</th>
-                    <td>PS</td>
-                    <td>Diff</td>
-                    <td>Total</td>
-                    <td>Diff</td>
-                    <td>Poäng</td>
-                    <td>Totalpoäng</td>
-                </tr>
-                </thead>
-                <tbody>
-                </tbody>
+                <table id="tableDrivers">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th></th>
+                            <th>Nat</th>
+                            <th>Förare</th>
+                                    <th>Team</th>
+                            <th>Bil</th>
 
-            </table>
-            <div style="margin:0 auto; text-align:center;">
-                <p>Senast uppdaterad vid: 2023-03-02T19:07:31Z</p>
+                            <th>
+                                <a href="./C-0-driver-results.html">
+                                    <img src="./assets/country-flags/welsh.png" alt="welsh" title="welsh"/>
+                                </a>
+                            </th>
+
+                            <th>Poäng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+
+                </table>
+                <div style="margin:0 auto; text-align:center;">
+                    <p>Senast uppdaterad vid: 2023-03-02T19:07:31Z</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<script>
+    <script>
     function openMobileNav() {
         closeNav("seriesMobileNav");
         openNav("mobileNav");
@@ -214,5 +215,4 @@
 </script>
 
 </body>
-
 </html>
